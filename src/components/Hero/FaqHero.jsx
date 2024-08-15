@@ -9,7 +9,7 @@ const FaqHero = () => {
       <div className="container">
         <Header />
         <div className={classes.heroContent}>
-          <p className={classes.heroDesc}>We're here to help you</p>
+          <p className={classes.heroDesc}>We&apos;re here to help you</p>
           <h2 className={classes.heroTitle}>How can we assist?</h2>
           <div className={classes.searchInputBlock}>
             <IoIosSearch className={classes.searchIcon} />

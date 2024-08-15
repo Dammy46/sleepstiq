@@ -1,13 +1,14 @@
 import React from "react";
 import classes from "./partner.module.css";
 import { partners } from "@/utils/constant";
+import Image from "next/image";
 
 const Partner = () => {
   return (
     <div className={classes.partnerBlock}>
       {partners.map((partner, index) => (
         <div className={classes.partnerLogo} key={index}>
-          <img src={partner} alt="partner" />
+          <Image fill src={partner} alt="partner" />
         </div>
       ))}
       <div className={classes.mobileContainer}>
@@ -17,7 +18,7 @@ const Partner = () => {
               className={`${classes.partnerLogo} ${classes.mobilePartnerLogo}`}
               key={index}
             >
-              <img src={partner} alt="partner" />
+              <Image fill src={partner} alt="partner" />
             </div>
           ))}
         </div>
@@ -27,7 +28,7 @@ const Partner = () => {
               className={`${classes.partnerLogo} ${classes.mobilePartnerLogo}`}
               key={index}
             >
-              <img src={partner} alt="partner" />
+              <Image fill src={partner} alt="partner" />
             </div>
           ))}
         </div>

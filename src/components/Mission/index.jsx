@@ -15,7 +15,8 @@ const Mission = () => {
               We started Sleepstiq with 1 simple goal: to be your best friend at
               bedtime. We, just like you, deal with stress, unease, and trouble
               sleeping from a number of silly things like school, work, screens,
-              numbers, and people. That's why we created products that aim to -
+              numbers, and people. That&apos;s why we created products that aim
+              to -
             </p>
 
             <p className={classes.missionContentDesc}>✓ Promote Calm </p>

@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="container">
         <Header />
         <div className={classes.heroContent}>
-          <p className={classes.heroDesc}>We're here to help you</p>
+          <p className={classes.heroDesc}>We&apos;re here to help you</p>
           <h2 className={classes.heroTitle}>Relax & Rest</h2>
           <p className={classes.heroDesc}>
             With the aid of our Melatonin Sleepstiq, we can assure you that you

@@ -8,7 +8,7 @@ const ShopHero = () => {
       <div className="container">
         <Header />
         <div className={classes.heroContent}>
-          <p className={classes.heroDesc}>We're here to help you</p>
+          <p className={classes.heroDesc}>We&apos;re here to help you</p>
           <h2 className={classes.heroTitle}>Relax & Rest</h2>
         </div>
       </div>

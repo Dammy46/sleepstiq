@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./story.module.css";
 import { IoPlay } from "react-icons/io5";
 import "swiper/css";
+import Image from "next/image";
 
 const Story = () => {
   return (
@@ -31,7 +32,8 @@ const Story = () => {
               </p>
               <div className={classes.userBlock}>
                 <div className={classes.userAvatar}>
-                  <img
+                  <Image
+                    fill
                     src="/assets/images/dummy-avatar.png"
                     alt="user-profile"
                   />
