@@ -11,6 +11,7 @@
 .productImgBlock,
 .productContentBlock {
   width: 50%;
+  overflow: hidden;
 }
 .productContentBlock {
   padding-top: 5em;
