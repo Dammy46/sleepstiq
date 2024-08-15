@@ -1,0 +1,55 @@
+.partnerBlock {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  background-color: #ffffff;
+  width: 1276px;
+  height: 130px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 50px 100px #00000025;
+  border-radius: 2px;
+}
+.partnerLogo {
+  width: 152px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.mobileContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  display: none;
+}
+.firstLogoBlock {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  animation: slideAnimation 35s linear infinite;
+}
+.mobileContainer:hover .firstLogoBlock {
+  animation-play-state: paused;
+}
+@media (max-width: 1025px) {
+  .partnerLogo {
+    display: none;
+  }
+  .mobileContainer {
+    display: block;
+  }
+  .mobilePartnerLogo {
+    display: block;
+  }
+}
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

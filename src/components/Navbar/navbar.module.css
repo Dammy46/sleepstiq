@@ -1,0 +1,33 @@
+.navbarBlock {
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow: auto;
+  width: 70vw;
+  transition: all 0.3s ease-in;
+}
+.navbarContainer {
+  height: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.flexItem,
+.mobileLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3em;
+  width: 100%;
+}
+.mobileLinks {
+  justify-content: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}

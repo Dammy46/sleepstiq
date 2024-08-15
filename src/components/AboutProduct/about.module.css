@@ -1,0 +1,133 @@
+.aboutBlock {
+  min-height: 80vh;
+  position: relative;
+  padding-top: 4em;
+}
+.aboutProductFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.productImgBlock,
+.productContentBlock {
+  width: 50%;
+}
+.productContentBlock {
+  padding-top: 5em;
+}
+.productImg {
+  position: relative;
+  width: 545px;
+  height: 545px;
+}
+.productImg img {
+  object-fit: cover;
+  overflow: inherit;
+  object-position: right;
+}
+.productContent {
+  width: 423px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #12305b;
+  margin-bottom: 30px;
+}
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21384299;
+}
+.productFeatures {
+  width: 387px;
+  margin: 20px 0;
+}
+.productFeatures li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d533c;
+  list-style: auto;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+.productFeatures li:nth-child(1)::marker {
+  content: "😊";
+}
+.productFeatures li:nth-child(2)::marker {
+  content: "💤";
+}
+.productFeatures li:nth-child(3)::marker {
+  content: "✅";
+}
+.unitFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 24px;
+}
+.unitBlockTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.unitBlock input {
+  width: 63px;
+  height: 33px;
+  border-radius: 7px;
+  padding: 8px;
+  border: 1px solid #12305b;
+  font-size: 16px;
+  color: #000000;
+}
+.buyBtn {
+  width: 225px;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #21384218;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+@media (max-width: 1024px) {
+  .productImg {
+    position: relative;
+    width: 445px;
+    height: 445px;
+  }
+}
+@media (max-width: 900px) {
+  .aboutProductFlex {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .productImgBlock,
+  .productContentBlock,
+  .productContent {
+    width: 100%;
+  }
+  .productImgBlock {
+    display: flex;
+    justify-content: center;
+  }
+  .productImg {
+    width: 500px;
+  }
+  .productContentBlock {
+    padding: 0;
+  }
+}
+@media (max-width: 640px) {
+  .productFeatures,
+  .productImg,
+  .buyBtn {
+    width: 100%;
+  }
+  .productImg img {
+    overflow: auto;
+    object-position: initial;
+  }
+}

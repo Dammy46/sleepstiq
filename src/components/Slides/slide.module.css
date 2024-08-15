@@ -1,0 +1,64 @@
+.reviewSlideBlock {
+  min-height: 40vh;
+  position: relative;
+}
+.productReviewSlideBlock {
+  min-height: 80vh;
+}
+.reviewCard {
+  width: 306px;
+  height: 202px;
+  background-color: #fbf9f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 8px;
+}
+.reviewDesc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d533c;
+  font-style: italic;
+}
+.reviewerBlock {
+  margin-top: auto;
+}
+.reviewer {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4d533c;
+}
+.productCard {
+  width: 306px;
+  height: 420px;
+  background-color: #ffffff;
+  box-shadow: 30px 30px 50px #00000025;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productImg {
+  position: relative;
+  width: 100%;
+  height: 210px;
+}
+.cardBody {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50%;
+}
+.productDesc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d533c;
+  font-style: italic;
+}
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4d533c;
+}

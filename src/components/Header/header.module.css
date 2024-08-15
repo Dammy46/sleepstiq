@@ -1,0 +1,29 @@
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 180px;
+  padding: 25px 0;
+}
+.headerLogo {
+  width: 62px;
+  height: 62px;
+  position: relative;
+}
+.linksWrap {
+  display: none;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 640px) {
+  .headerBlock {
+    justify-content: flex-start;
+  }
+  .headerLogo {
+    width: 92px;
+  }
+  .linksWrap {
+    display: flex;
+  }
+}

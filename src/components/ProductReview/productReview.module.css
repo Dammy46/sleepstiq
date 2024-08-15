@@ -1,0 +1,14 @@
+.productReviewBlock {
+  padding-top: 4em;
+}
+.productReviewTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4d533c;
+}
+
+@media (min-width: 640px) {
+  .productReviewTitle {
+    font-size: 36px;
+  }
+}

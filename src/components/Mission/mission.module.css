@@ -1,0 +1,79 @@
+.missionBlock {
+  min-height: 100vh;
+  padding-top: 4em;
+  position: relative;
+}
+
+.missionFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.missionContent {
+  flex: 0.5;
+}
+.missionContentTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #12305b;
+}
+.missionContentDesc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21384299;
+}
+.missionImgBlock {
+  position: absolute;
+  flex: 1;
+  height: 550px;
+  width: 46%;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+}
+.missionImgBlock::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../../../public/assets/images/mission.png);
+  height: 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 640px) {
+  .missionContentTitle {
+    font-size: 36px;
+  }
+}
+@media (max-width: 900px) {
+  .missionImgBlock::after {
+    background-position: top;
+  }
+}
+@media (max-width: 640px) {
+  .missionBlock {
+    min-height: 138vh;
+  }
+  .missionFlex {
+    flex-direction: column;
+  }
+  .missionContent {
+    flex: 1;
+  }
+
+  .missionImgBlock {
+    width: 100%;
+    flex: auto;
+    top: auto;
+    bottom: 0;
+    height: 440px;
+  }
+}
+@media (max-width: 320px) {
+  .missionBlock {
+    min-height: 155vh;
+  }
+}

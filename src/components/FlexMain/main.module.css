@@ -1,0 +1,83 @@
+.flexMainBlock {
+  min-height: 80vh;
+  padding: 4em 0;
+  position: relative;
+}
+.mainFlexBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 60px;
+}
+.tabsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  flex: 0.24;
+  cursor: pointer;
+}
+.tabLabelBlock {
+  width: 100%;
+}
+.tabContentBlock {
+  flex: 1;
+}
+.tabLabel {
+  font-size: 18px;
+  font-weight: 400;
+  color: #12305b;
+}
+.tabLabel[data-active="true"] {
+  font-weight: 700;
+  position: relative;
+}
+.tabLabel[data-active="true"]::after {
+  position: absolute;
+  right: 0;
+  bottom: -11px;
+  width: 126px;
+  height: 47px;
+  background-color: #ffd7231a;
+  content: "";
+}
+.accItem {
+  padding: 20px 0px;
+  border-top: 1px solid #bdbdbd;
+}
+.accItem:last-child {
+  border-bottom: 1px solid #bdbdbd;
+}
+.accTitleBlock {
+  cursor: pointer;
+}
+.accTitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #12305b;
+}
+.accTitle[data-selected="true"] {
+  font-weight: 600;
+}
+.accContentBlock {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s cubic-bezier(0, 1, 0, 1);
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+.accContentBlock[data-selected="true"] {
+  max-height: 9999px;
+  margin-top: 12px;
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 640px) {
+  .mainFlexBlock {
+    flex-direction: column;
+  }
+  .tabsBlock {
+    flex: 1;
+  }
+}

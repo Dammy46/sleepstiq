@@ -1,0 +1,97 @@
+.heroBlock,
+.shopHeroBlock,
+.faqHeroBlock {
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../../../public/assets/images/heroBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #12305b;
+}
+.shopHeroBlock {
+  background-image: url(../../../public/assets/images/shopBg.png);
+}
+.faqHeroBlock {
+  background-image: none;
+  background-color: #fbf9f2;
+}
+.heroContent {
+  padding-top: 5em;
+}
+.heroDesc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+}
+.heroDesc:nth-child(3) {
+  margin-top: 19px;
+  width: auto;
+}
+.heroTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-top: 18px;
+}
+.searchInputBlock {
+  width: 80%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+.searchIcon {
+  width: 32px;
+  height: 32px;
+  color: #2c3e50;
+}
+.searchInput {
+  font-size: 18px;
+  font-weight: 400;
+  color: #12305b;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .heroDesc:nth-child(3) {
+    width: 581px;
+  }
+  .heroTitle {
+    font-size: 60px;
+  }
+  .searchInputBlock {
+    gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .heroContent {
+    padding-top: 11em;
+  }
+  .faqHeroBlock .heroContent {
+    padding-top: 7em;
+  }
+  .searchInputBlock {
+    width: 100%;
+    padding: 25px;
+  }
+}
+@media (max-width: 640px) {
+  .searchInputBlock {
+    padding: 18px;
+    gap: 18px;
+  }
+  .searchIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .faqHeroBlock .heroTitle {
+    font-size: 38px;
+  }
+}

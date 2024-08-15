@@ -1,0 +1,28 @@
+.visitBlock {
+  min-height: 50vh;
+  padding-top: 4em;
+}
+.visitTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #12305b;
+  text-align: center;
+}
+.visitDesc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21384299;
+  margin-top: 35px;
+  text-align: center;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #21384218;
+  margin-top: 9em;
+}
+@media (min-width: 640px) {
+  .visitTitle {
+    font-size: 36px;
+  }
+}
